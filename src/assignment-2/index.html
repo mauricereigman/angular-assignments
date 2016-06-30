@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-2 | </title>
+    <script src="/dist/vendor/vendor.js"></script>
+    <script src="/dist/assignment-2/scripts/assignment-2.js"></script>
+</head>
+<body>
+    <h1>Assigment-2 | doing magic with real data</h1>
+
+    <div ng-app="MovieFinder">
+        <div ng-controller="SearchCtrl">
+            <div>
+                {{searchQuery}}
+            </div>
+
+            <input type="text" ng-model="searchQuery">
+
+            <!--
+                assignment 2.4 | ng-click
+                create a button element and add the angular directive attribute ng-click to it, set the value to the function you created in the previous function
+                example:
+                    <button ng-click="myFunction()"></button>
+            -->
+
+            <!--
+                assignment 2.2 | showing data from our api call
+                print the movies data using ng-repeat to iterate over the array and print out some properties
+                example:
+                    <div ng-repeat="movie in yourArray">
+                        <div>title: {{movie.title}}<div>
+                        <div>poster: {{movie.poster}}<div>
+                    <div/>
+            -->
+
+
+        </div>
+    </div>
+</body>
+</html>

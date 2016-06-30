@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-5 | </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.9/angular-material.min.js"></script>
+    <script src="/dist/vendor/vendor.js"></script>
+    <script src="/dist/assignment-5/scripts/assignment-5.js"></script>
+</head>
+<body>
+<h1>Assigment-5 | directive</h1>
+
+<div ng-app="MovieFinder">
+    <div ng-controller="SearchCtrl">
+
+        <div>
+            <div>
+                {{searchQuery}}
+            </div>
+            <input type="text" ng-model="searchQuery">
+            <button ng-click="getMovies()">SEARCH</button>
+        </div>
+
+        <section style="width:200px; height:300px; float:left; background:#fff6de; margin: 0 0 50px 30px; " ng-repeat="movie in movies">
+            <ng-movie-block movie="movie"></ng-movie-block>
+        </section>
+    </div>
+</div>
+</body>
+</html>

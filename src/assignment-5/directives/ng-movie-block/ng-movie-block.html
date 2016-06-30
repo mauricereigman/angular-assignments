@@ -1,0 +1,19 @@
+<span class="movie-block" ng-click="getMovieDetail()">
+    <span>title: {{movie.Title}}</span>
+    <span>poster:<img width="200px" src="{{movie.Poster}}"></span>
+</span>
+
+<div ng-if="movieDetail" style="position:fixed; top:0; left:0; background: white; width:100%; height:100%; padding:50px;">
+    <div><button ng-click="removeMovieDetail()">CLOSE</button></div>
+    <img src="{{movieDetail.Poster}}">
+    <h2>Title: {{movieDetail.Title}}</h2>
+    <div>Actors: {{movieDetail.Actors}}</div>
+    <div>Country: {{movieDetail.Country}}</div>
+    <div>Director: {{movieDetail.Director}}</div>
+    <div>Genre: {{movieDetail.Genre}}</div>
+    <div>Language: {{movieDetail.Language}}</div>
+    <div>Plot: {{movieDetail.Plot}}</div>
+    <div>Rated: {{movieDetail.Rated}}</div>
+    <div>Year: {{movieDetail.Year}}</div>
+    <div>imdbRating: {{movieDetail.imdbRating}}</div>
+</div>

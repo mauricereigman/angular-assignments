@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-4 | </title>
+    <script src="/dist/vendor/vendor.js"></script>
+    <script src="/dist/assignment-4/scripts/assignment-4.js"></script>
+</head>
+<body>
+<h1>Assigment-4 | directive </h1>
+
+<div ng-app="MovieFinder">
+    <div ng-controller="SearchCtrl">
+        <div>
+            {{searchQuery}}
+        </div>
+
+        <input type="text" ng-model="searchQuery">
+
+        <button ng-click="getMovies()">SEARCH</button>
+
+        <section ng-repeat="movie in movies">
+            <!--
+                assignment 4.0 | creating a directive
+                lets replace the following code block with a directive:
+                <div>title: {{movie.Title}}</div>
+                <img src="{{movie.Poster}}">poster:
+                We are going to create a directive to display the results and add some custom functionality to it
+                when one of the search results has been clicked we wil call another query which will search for more detailed information on the clicked item
+                code:
+                    <ng-movie-block movie-results="movies"></ng-movie-block>
+            -->
+            <div>title: {{movie.Title}}</div>
+            <img src="{{movie.Poster}}">poster:
+        </section>
+    </div>
+</div>
+</body>
+</html>

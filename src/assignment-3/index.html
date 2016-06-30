@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-3 | </title>
+    <script src="/dist/vendor/vendor.js"></script>
+    <script src="/dist/assignment-3/scripts/assignment-3.js"></script>
+</head>
+<body>
+    <h1>Assigment-3 | the cleanup </h1>
+
+    <div ng-app="MovieFinder">
+        <div ng-controller="SearchCtrl">
+            <div>
+                {{searchQuery}}
+            </div>
+
+            <input type="text" ng-model="searchQuery">
+
+            <button ng-click="getMovies()">SEARCH</button>
+
+            <section ng-repeat="movie in movies">
+                <div>title: {{movie.Title}}</div>
+                <img src="{{movie.Poster}}">poster:
+            </section>
+        </div>
+    </div>
+</body>
+</html>
